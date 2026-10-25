@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grant Studios Partner Board | Vetted SEO experts, matched to your job</title>
+<meta name="description" content="The Grant Studios Partner Board is a niche-first, vetted network: the best place to get vetted SEO experts for on-page, off-page, technical SEO and WordPress. Founding partners wanted.">
+<meta property="og:title" content="Grant Studios Partner Board">
+<meta property="og:description" content="Vetted SEO experts, matched to your job, with an exclusive bonus on every job through the board.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f5f1e8; --paper-2:#ece6d8; --ink:#14171f; --ink-2:#3a3f4b; --muted:#6b6f7a;
+  --line:#d9d2c2; --accent:#0e7a5a; --accent-soft:#d6ebe2; --dark:#101319;
+  --serif:'Fraunces', Georgia, serif; --sans:'Inter', system-ui, -apple-system, Segoe UI, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%}
+.wrap{width:min(1120px,90vw);margin:0 auto}
+.eyebrow{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--accent)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.015em}
+h2{font-size:clamp(2rem,4.6vw,3.4rem)}
+h3{font-size:1.35rem}
+p.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--ink-2);max-width:40ch}
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:.95em 1.5em;border-radius:999px;font-weight:600;text-decoration:none;font-size:.98rem;transition:transform .2s ease,background .2s ease,color .2s ease;border:1.5px solid var(--ink)}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--accent);border-color:var(--accent)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn-light{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn-light:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-outline-light{border-color:rgba(245,241,232,.5);color:var(--paper)}
+.btn-outline-light:hover{background:var(--paper);color:var(--ink)}
+
+/* progress */
+#progress{position:fixed;top:0;left:0;height:3px;background:var(--accent);width:0;z-index:100}
+
+/* nav */
+nav.top{position:sticky;top:0;z-index:50;background:rgba(245,241,232,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+nav.top.scrolled{border-color:var(--line)}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:var(--serif);font-weight:800;font-size:1.15rem;text-decoration:none;display:flex;align-items:center;gap:.55em}
+.brand .mark{width:26px;height:26px;border-radius:7px;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-size:.8rem;font-family:var(--sans);font-weight:700}
+.brand small{font-family:var(--sans);font-weight:500;color:var(--muted);font-size:.8rem}
+nav.top ul{display:flex;gap:1.6rem;list-style:none;font-size:.92rem}
+nav.top ul a{text-decoration:none;color:var(--ink-2)}
+nav.top ul a:hover{color:var(--accent)}
+nav.top .btn{padding:.6em 1.1em;font-size:.88rem}
+@media(max-width:860px){nav.top ul{display:none}}
+
+/* hero */
+.hero{position:relative;padding:clamp(3rem,8vh,6rem) 0 clamp(4rem,10vh,7rem);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.25fr .9fr;gap:3.5rem;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:2.5rem}}
+.hero .kicker{display:inline-flex;align-items:center;gap:.6em;border:1px solid var(--line);background:#fff8;padding:.4em .9em;border-radius:999px;font-size:.82rem;font-weight:500;color:var(--ink-2);margin-bottom:1.6rem}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(14,122,90,.5);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(14,122,90,.45)}70%{box-shadow:0 0 0 10px rgba(14,122,90,0)}100%{box-shadow:0 0 0 0 rgba(14,122,90,0)}}
+.hero h1{font-size:clamp(2.7rem,7vw,5.6rem);font-weight:800;letter-spacing:-.03em}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--accent)}
+.hero h1 .strike{position:relative;color:var(--muted);font-weight:400}
+.hero h1 .strike::after{content:"";position:absolute;left:-2%;top:55%;height:.07em;background:var(--ink);width:0;animation:strike 1s .9s forwards ease}
+@keyframes strike{to{width:104%}}
+.hero p.lead{margin:1.6rem 0 2.2rem}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.hero .note{margin-top:1.4rem;font-size:.86rem;color:var(--muted)}
+
+/* vetting card */
+.vet-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:1.6rem 1.6rem 1.4rem;box-shadow:0 30px 60px -30px rgba(20,23,31,.35);position:relative;transform:rotate(1.2deg)}
+.vet-card::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--line);border-radius:22px;z-index:-1;background:var(--paper-2)}
+.vet-head{display:flex;justify-content:space-between;align-items:center;font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.14em;font-weight:600;padding-bottom:1rem;border-bottom:1px dashed var(--line)}
+.vet-job{font-family:var(--serif);font-size:1.3rem;margin:1.1rem 0 .3rem;min-height:1.6em}
+.vet-job .caret{display:inline-block;width:2px;height:1em;background:var(--accent);vertical-align:-2px;margin-left:2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.vet-sub{font-size:.85rem;color:var(--muted);margin-bottom:1rem}
+.checks{list-style:none;display:grid;gap:.55rem}
+.checks li{display:flex;align-items:center;gap:.7rem;font-size:.93rem;color:var(--muted);transition:color .4s}
+.checks li .box{width:20px;height:20px;border-radius:6px;border:1.5px solid var(--line);display:grid;place-items:center;flex:none;transition:all .35s}
+.checks li .box svg{width:12px;height:12px;opacity:0;transform:scale(.4);transition:all .35s}
+.checks li.on{color:var(--ink)}
+.checks li.on .box{background:var(--accent);border-color:var(--accent)}
+.checks li.on .box svg{opacity:1;transform:scale(1)}
+.stamp{position:absolute;right:1.2rem;bottom:1.1rem;font-family:var(--serif);font-weight:800;font-size:1.05rem;letter-spacing:.12em;color:var(--accent);border:2.5px solid var(--accent);padding:.25em .6em;border-radius:8px;transform:rotate(-10deg) scale(1.8);opacity:0;transition:all .45s cubic-bezier(.2,1.6,.4,1)}
+.stamp.on{opacity:.9;transform:rotate(-10deg) scale(1)}
+
+/* marquee */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:var(--paper-2)}
+.marquee .track{display:flex;gap:3rem;white-space:nowrap;padding:1rem 0;animation:scroll 32s linear infinite;width:max-content}
+.marquee span{font-family:var(--serif);font-size:1.25rem;color:var(--ink-2)}
+.marquee span i{color:var(--accent);font-style:normal;margin-right:3rem}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+section{position:relative}
+.sec{padding:clamp(5rem,12vh,8.5rem) 0}
+.sec-head{max-width:720px;margin-bottom:3rem}
+.sec-head h2{margin:.7rem 0 1rem}
+
+/* how it works: pinned */
+.how{height:320vh;background:var(--dark);color:var(--paper)}
+.how .eyebrow{color:#5fd0a6}
+.how-pin{position:sticky;top:0;height:100vh;display:flex;align-items:center;overflow:hidden}
+.how-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:4rem;align-items:center;width:100%}
+@media(max-width:900px){.how-grid{grid-template-columns:1fr;gap:2rem}}
+.how h2{color:var(--paper)}
+.how p.lead{color:#b9bcc4}
+.how-bar{margin-top:2.2rem;height:4px;background:#2a2f3a;border-radius:4px;overflow:hidden;max-width:360px}
+.how-bar div{height:100%;width:0;background:#5fd0a6}
+.how-count{margin-top:.8rem;font-size:.85rem;color:#8a8e98;font-variant-numeric:tabular-nums}
+.steps{list-style:none;display:grid;gap:1rem;counter-reset:s}
+.step{border:1px solid #2a2f3a;border-radius:18px;padding:1.3rem 1.5rem;display:grid;grid-template-columns:auto 1fr;gap:1.1rem;align-items:start;opacity:.28;transform:translateX(24px);transition:opacity .5s ease,transform .5s ease,border-color .5s,background .5s}
+.step.on{opacity:1;transform:none}
+.step.current{border-color:#5fd0a6;background:#161b23}
+.step .n{font-family:var(--serif);font-size:1.6rem;font-weight:800;color:#5fd0a6;line-height:1;min-width:1.6ch}
+.step h3{color:var(--paper);font-size:1.18rem;margin-bottom:.3rem}
+.step p{color:#b9bcc4;font-size:.95rem}
+@media(max-width:900px){.how{height:auto}.how-pin{position:relative;height:auto;padding:5rem 0}.step{opacity:1;transform:none}.how-bar,.how-count{display:none}}
+
+/* bonus */
+.bonus{background:var(--paper)}
+.bonus-scene{height:220vh}
+.bonus-pin{position:sticky;top:0;min-height:100vh;display:flex;align-items:center}
+.bonus-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;width:100%}
+@media(max-width:900px){.bonus-scene{height:auto}.bonus-pin{position:relative;min-height:0;padding:5rem 0}.bonus-grid{grid-template-columns:1fr;gap:2.5rem}}
+.equation{display:grid;gap:1rem;position:relative}
+.eq-card{border-radius:20px;padding:1.5rem 1.6rem;border:1px solid var(--line);background:#fff}
+.eq-card small{display:block;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted);margin-bottom:.4rem}
+.eq-card strong{font-family:var(--serif);font-size:1.45rem;font-weight:600}
+.eq-plus{font-family:var(--serif);font-size:2.6rem;color:var(--accent);text-align:center;line-height:1;transform:scale(.4);opacity:0;transition:all .5s cubic-bezier(.2,1.6,.4,1)}
+.eq-card.extra{background:var(--ink);color:var(--paper);border-color:var(--ink);transform:translateY(40px) rotate(-2deg);opacity:0;transition:all .7s cubic-bezier(.2,1.2,.3,1)}
+.eq-card.extra small{color:#5fd0a6}
+.equation.reveal .eq-plus{transform:scale(1);opacity:1}
+.equation.reveal .eq-card.extra{transform:rotate(-1deg);opacity:1}
+.gift-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.gift-tags span{border:1px solid rgba(245,241,232,.3);border-radius:999px;padding:.3em .85em;font-size:.84rem}
+.bonus-copy ul{list-style:none;margin-top:1.6rem;display:grid;gap:.85rem}
+.bonus-copy li{display:flex;gap:.8rem;color:var(--ink-2)}
+.bonus-copy li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:.6em}
+
+/* niches */
+.niches{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.niche-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+@media(max-width:980px){.niche-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.niche-grid{grid-template-columns:1fr}}
+.niche{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.6rem;display:flex;flex-direction:column;gap:.7rem;min-height:250px;transition:transform .35s ease,box-shadow .35s ease,border-color .35s}
+.niche:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(20,23,31,.35);border-color:var(--accent)}
+.niche .tag{align-self:flex-start;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:.3em .7em;border-radius:999px}
+.niche h3{font-size:1.3rem}
+.niche p{font-size:.93rem;color:var(--ink-2)}
+.niche ul{list-style:none;margin-top:auto;font-size:.84rem;color:var(--muted);display:grid;gap:.25rem}
+.niche ul li::before{content:"— "}
+.coming{margin-top:2.2rem;display:flex;flex-wrap:wrap;align-items:center;gap:.6rem}
+.coming b{font-size:.85rem;color:var(--muted);font-weight:600;margin-right:.4rem}
+.coming span{border:1px dashed var(--line);background:transparent;border-radius:999px;padding:.35em .9em;font-size:.86rem;color:var(--muted)}
+
+/* specialists */
+.spec{background:var(--dark);color:var(--paper)}
+.spec h2{color:var(--paper)}
+.spec .eyebrow{color:#5fd0a6}
+.spec p.lead{color:#b9bcc4}
+.spec-top{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:end;margin-bottom:3.5rem}
+@media(max-width:900px){.spec-top{grid-template-columns:1fr}}
+.big-num{font-family:var(--serif);font-weight:800;font-size:clamp(5rem,14vw,10rem);line-height:.9;color:#5fd0a6;font-variant-numeric:tabular-nums}
+.big-num-cap{color:#b9bcc4;font-size:.95rem;max-width:30ch;margin-top:.6rem}
+.terms{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media(max-width:900px){.terms{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.terms{grid-template-columns:1fr}}
+.term{border:1px solid #2a2f3a;border-radius:18px;padding:1.5rem;opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease,border-color .3s}
+.term.in{opacity:1;transform:none}
+.term:hover{border-color:#5fd0a6}
+.term .ti{font-family:var(--serif);font-size:1.05rem;color:#5fd0a6;margin-bottom:.5rem;font-weight:600}
+.term h3{color:var(--paper);font-size:1.2rem;margin-bottom:.4rem}
+.term p{color:#b9bcc4;font-size:.93rem}
+.founding{margin-top:3rem;border:1px solid #5fd0a6;border-radius:24px;padding:2.2rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;background:linear-gradient(120deg,#13201b,#101319 60%)}
+@media(max-width:760px){.founding{grid-template-columns:1fr}}
+.founding h3{color:var(--paper);font-size:clamp(1.4rem,2.6vw,1.9rem);margin-bottom:.5rem}
+.founding p{color:#b9bcc4;max-width:52ch}
+
+/* faq */
+.faq-list{max-width:820px;display:grid;gap:.8rem}
+details{border:1px solid var(--line);border-radius:16px;background:#fff;padding:0 1.4rem;transition:border-color .3s}
+details[open]{border-color:var(--accent)}
+summary{list-style:none;cursor:pointer;padding:1.25rem 0;font-weight:600;display:flex;justify-content:space-between;gap:1rem;align-items:center;font-size:1.02rem}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;transition:transform .3s,background .3s,border-color .3s;font-weight:500}
+details[open] summary .pm{transform:rotate(45deg);background:var(--accent);border-color:var(--accent);color:#fff}
+details .ans{padding:0 0 1.3rem;color:var(--ink-2);font-size:.97rem;max-width:68ch}
+.faq-group{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted);margin:1.6rem 0 .3rem}
+
+/* contact */
+.contact{padding:clamp(5rem,12vh,8rem) 0;text-align:center}
+.contact h2{font-size:clamp(2.3rem,6vw,4.6rem);font-weight:800;max-width:16ch;margin:1rem auto 1.2rem}
+.contact h2 em{font-style:italic;font-weight:400;color:var(--accent)}
+.contact p.lead{margin:0 auto 2.2rem}
+.contact .ctas{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center}
+.contact .mail{margin-top:1.6rem;font-size:.92rem;color:var(--muted)}
+.contact .mail a{color:var(--ink);font-weight:600}
+footer{border-top:1px solid var(--line);padding:2rem 0;font-size:.85rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv,.term,.step{opacity:1!important;transform:none!important}
+  .hero h1 .strike::after{width:104%}
+  .equation .eq-plus,.equation .eq-card.extra{opacity:1;transform:none}
+  .checks li .box{background:var(--accent);border-color:var(--accent)}
+  .checks li .box svg{opacity:1;transform:none}
+  .stamp{opacity:.9;transform:rotate(-10deg)}
+  .how,.bonus-scene{height:auto}
+  .how-pin,.bonus-pin{position:relative;height:auto;min-height:0;padding:5rem 0}
+}
+</style>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+
+<nav class="top" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="mark">GS</span>Partner Board <small>by Grant Studios</small></a>
+    <ul>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#bonus">The bonus</a></li>
+      <li><a href="#niches">Niches</a></li>
+      <li><a href="#specialists">For specialists</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-primary" href="mailto:carl@grantstudios.site?subject=Partner%20Board%3A%20find%20an%20expert">Find an expert</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker"><span class="dot"></span>Now open: founding SEO partners wanted</span>
+      <h1>Vetted SEO experts. <em>Matched</em> to your job, <span class="strike">not scrolled for.</span></h1>
+      <p class="lead">The Grant Studios Partner Board is a small, vetted network built to be the best place to get vetted SEO experts. Tell us the job; we hand you the right specialist, plus a bonus you won't get anywhere else.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="mailto:carl@grantstudios.site?subject=Partner%20Board%3A%20find%20an%20expert">Find an expert <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="mailto:carl@grantstudios.site?subject=Partner%20Board%3A%20join%20as%20a%20partner">Join as a partner</a>
+      </div>
+      <p class="note">No open marketplace and no bidding war. Every specialist is reviewed before they're listed.</p>
+    </div>
+
+    <div class="vet-card" aria-label="Example of how a job gets matched">
+      <div class="vet-head"><span>New match request</span><span>Partner Board</span></div>
+      <div class="vet-job" id="vetJob"><span id="vetText"></span><span class="caret"></span></div>
+      <div class="vet-sub">Matching against vetted specialists in this niche</div>
+      <ul class="checks" id="checks">
+        <li><span class="box"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Right niche for the job</li>
+        <li><span class="box"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Past work reviewed</li>
+        <li><span class="box"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Agreed to board terms</li>
+        <li><span class="box"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Exclusive board bonus attached</li>
+      </ul>
+      <div class="stamp" id="stamp">VETTED</div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>On-page SEO &amp; content <i>✦</i></span><span>Off-page SEO &amp; digital PR <i>✦</i></span><span>Technical SEO <i>✦</i></span><span>WordPress <i>✦</i></span><span>Vetted entry <i>✦</i></span><span>A bonus on every job <i>✦</i></span>
+    <span>On-page SEO &amp; content <i>✦</i></span><span>Off-page SEO &amp; digital PR <i>✦</i></span><span>Technical SEO <i>✦</i></span><span>WordPress <i>✦</i></span><span>Vetted entry <i>✦</i></span><span>A bonus on every job <i>✦</i></span>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="how-pin">
+    <div class="wrap how-grid">
+      <div>
+        <span class="eyebrow">For clients · How it works</span>
+        <h2 style="margin:.8rem 0 1.1rem">From "I need SEO help" to the right specialist, in four steps.</h2>
+        <p class="lead">You don't sift through profiles or chase quotes. We know who's on the board, what they're good at, and who fits your job.</p>
+        <div class="how-bar"><div id="howBar"></div></div>
+        <div class="how-count" id="howCount">Step 1 of 4</div>
+      </div>
+      <ol class="steps" id="steps">
+        <li class="step on current"><span class="n">01</span><div><h3>Tell us the job</h3><p>Email us what you need: the site, the goal, the timeline, your budget. Plain words are fine.</p></div></li>
+        <li class="step"><span class="n">02</span><div><h3>We match you with a vetted specialist</h3><p>We pick the partner whose niche and track record fit your job. One good match, not a pile of pitches.</p></div></li>
+        <li class="step"><span class="n">03</span><div><h3>Pay a small matching fee</h3><p>A small, non-refundable fee: our thanks for the matching. It secures your specialist's contact, and your job comes with an exclusive partner bonus.</p></div></li>
+        <li class="step"><span class="n">04</span><div><h3>The work gets done. You pay securely.</h3><p>Once the job is done, you pay securely through Grant Studios. Then we ask how it went.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- BONUS -->
+<section class="bonus" id="bonus">
+  <div class="bonus-scene" id="bonusScene">
+    <div class="bonus-pin">
+      <div class="wrap bonus-grid">
+        <div class="bonus-copy rv">
+          <span class="eyebrow">The bonus promise</span>
+          <h2 style="margin:.8rem 0 1.1rem">What you expected, plus something you won't get anywhere else.</h2>
+          <p class="lead">Every partner on the board agrees to add one simple, unique bonus for clients who come through us. Same specialist, same skill, but more for your money when you hire through the board.</p>
+          <ul>
+            <li>Each partner sets their own bonus: a gift card, a discount, or a bundle.</li>
+            <li>It's exclusive to board clients. Go direct and you don't get it.</li>
+            <li>You'll know what your bonus is when we make the match.</li>
+          </ul>
+        </div>
+        <div class="equation" id="equation">
+          <div class="eq-card"><small>What you hired for</small><strong>The SEO job, done properly by a vetted specialist</strong></div>
+          <div class="eq-plus" aria-hidden="true">+</div>
+          <div class="eq-card extra"><small>Board-only bonus</small><strong>Something extra from your partner, just for coming through the board</strong>
+            <div class="gift-tags"><span>Gift card</span><span>Discount</span><span>Bundle</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NICHES -->
+<section class="niches sec" id="niches">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Niches</span>
+      <h2>SEO first. Done deep, not wide.</h2>
+      <p class="lead">We're starting with one niche and getting it right before we add more. Four specialities, each with its own vetted partners.</p>
+    </div>
+    <div class="niche-grid">
+      <article class="niche rv"><span class="tag">Open now</span><h3>On-page SEO &amp; content</h3><p>Pages and articles that rank and read well.</p><ul><li>Keyword research &amp; mapping</li><li>Content briefs &amp; writing</li><li>On-page optimisation</li></ul></article>
+      <article class="niche rv"><span class="tag">Open now</span><h3>Off-page SEO &amp; digital PR</h3><p>Authority you earn, not shortcuts that backfire.</p><ul><li>Link building</li><li>Digital PR &amp; outreach</li><li>Brand mentions</li></ul></article>
+      <article class="niche rv"><span class="tag">Open now</span><h3>Technical SEO</h3><p>A site search engines can crawl, understand and trust.</p><ul><li>Audits &amp; fixes</li><li>Site speed &amp; Core Web Vitals</li><li>Indexing &amp; structured data</li></ul></article>
+      <article class="niche rv"><span class="tag">Open now</span><h3>WordPress</h3><p>The platform behind it all, built and kept healthy.</p><ul><li>Builds &amp; redesigns</li><li>SEO-ready setup</li><li>Maintenance &amp; fixes</li></ul></article>
+    </div>
+    <div class="coming rv"><b>More niches later:</b><span>Paid ads</span><span>Web design</span><span>Copywriting</span><span>Social media</span><span>…tell us what you need</span></div>
+  </div>
+</section>
+
+<!-- SPECIALISTS -->
+<section class="spec sec" id="specialists">
+  <div class="wrap">
+    <div class="spec-top">
+      <div class="rv">
+        <span class="eyebrow">For specialists · Founding partners wanted</span>
+        <h2 style="margin:.8rem 0 1.1rem">Get sent work that fits you. Keep the clients you win.</h2>
+        <p class="lead">If you're very good at one part of SEO, the board sends you jobs in your niche, from clients who already want what you do. You only pay when a job closes.</p>
+      </div>
+      <div class="rv">
+        <div class="big-num"><span id="pct">0</span>%</div>
+        <p class="big-num-cap">Referral fee on jobs we send that close. You earn the same 20% when you refer work to other partners.</p>
+      </div>
+    </div>
+
+    <div class="terms">
+      <div class="term"><div class="ti">01</div><h3>Vetted entry</h3><p>We review your past work and talk with you before you're listed. That keeps the board worth trusting, for clients and for you.</p></div>
+      <div class="term"><div class="ti">02</div><h3>20% on closed jobs</h3><p>A 20% referral fee on jobs we send you, only when they close. No listing fee, no monthly charge.</p></div>
+      <div class="term"><div class="ti">03</div><h3>Earn 20% referring</h3><p>Got a job outside your speciality? Refer it to another partner and earn 20% when it closes.</p></div>
+      <div class="term"><div class="ti">04</div><h3>Member discounts</h3><p>Partners get discounts on each other's services. Need a tech audit or a WordPress fix? You're covered inside the network.</p></div>
+      <div class="term"><div class="ti">05</div><h3>One simple, unique bonus</h3><p>You agree to add one easy-to-fulfil bonus for board clients: a gift card, discount or bundle that's yours alone.</p></div>
+      <div class="term"><div class="ti">06</div><h3>Testimonials after every job</h3><p>We collect a testimonial once each job is done, so your reputation on the board grows with your work.</p></div>
+    </div>
+
+    <div class="founding rv">
+      <div>
+        <h3>We're inviting our founding partners now.</h3>
+        <p>The board is new and small on purpose. Email us your speciality, a few examples of your work, and the bonus you'd offer board clients. We'll take it from there.</p>
+      </div>
+      <a class="btn btn-light" href="mailto:carl@grantstudios.site?subject=Partner%20Board%3A%20join%20as%20a%20partner">Join as a partner <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">FAQ</span>
+      <h2>Straight answers.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-group">Fees</div>
+      <details class="rv"><summary>What does it cost to find an expert?<span class="pm">+</span></summary><div class="ans">A small matching fee, which we'll tell you before you commit. Then you pay the specialist's price for the job itself, agreed upfront.</div></details>
+      <details class="rv"><summary>Is the matching fee refundable?<span class="pm">+</span></summary><div class="ans">No. It's our thanks for the matching, and it secures your specialist's contact. Instead of a refund, every job through the board comes with an exclusive partner bonus: a gift card, a discount or a bundle.</div></details>
+      <details class="rv"><summary>What do partners pay?<span class="pm">+</span></summary><div class="ans">A 20% referral fee on jobs we send them, only when a job closes. There's no fee to be listed. Partners who refer work to other partners earn 20% the same way.</div></details>
+
+      <div class="faq-group">Payment</div>
+      <details class="rv"><summary>How does payment work?<span class="pm">+</span></summary><div class="ans">Once the job is done, you pay securely through Grant Studios. We then pay your specialist their share. You deal with one trusted point of payment, and your specialist knows they'll be paid.</div></details>
+      <details class="rv"><summary>When do I pay for the job itself?<span class="pm">+</span></summary><div class="ans">After the work is done. The only thing you pay at the start is the small matching fee.</div></details>
+
+      <div class="faq-group">Vetting</div>
+      <details class="rv"><summary>How are specialists vetted?<span class="pm">+</span></summary><div class="ans">Before anyone is listed, we review their past work in their niche and talk with them directly. They also agree to the board's terms, including the client bonus. After each job we collect a testimonial, so the board keeps learning who delivers.</div></details>
+      <details class="rv"><summary>Why only SEO right now?<span class="pm">+</span></summary><div class="ans">Because we'd rather be the best place to get vetted SEO experts than an average place for everything. Other niches will follow once SEO is working well.</div></details>
+      <details class="rv"><summary>I'm an SEO specialist. How do I join?<span class="pm">+</span></summary><div class="ans">Email <a href="mailto:carl@grantstudios.site?subject=Partner%20Board%3A%20join%20as%20a%20partner">carl@grantstudios.site</a> with your speciality, a few examples of your work, and the bonus you'd offer board clients. We're inviting founding partners now.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact" style="background:var(--paper-2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow rv">Contact</span>
+    <h2 class="rv">Need SEO done right? <em>Let's match you.</em></h2>
+    <p class="lead rv">Tell us the job and we'll come back with the right vetted specialist. Or, if you are that specialist, come help us build the board.</p>
+    <div class="ctas rv">
+      <a class="btn btn-primary" href="mailto:carl@grantstudios.site?subject=Partner%20Board%3A%20find%20an%20expert">Find an expert <span aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="mailto:carl@grantstudios.site?subject=Partner%20Board%3A%20join%20as%20a%20partner">Join as a partner</a>
+    </div>
+    <p class="mail rv">Or write to <a href="mailto:carl@grantstudios.site">carl@grantstudios.site</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Grant Studios · Partner Board</span>
+    <span>Run by Carl Grant-Acquah · <a href="mailto:carl@grantstudios.site">carl@grantstudios.site</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // progress + nav
+  var bar = document.getElementById('progress'), nav = document.getElementById('nav');
+  function clamp(v){return Math.max(0,Math.min(1,v));}
+  function sceneProgress(el){
+    var r = el.getBoundingClientRect(), total = el.offsetHeight - window.innerHeight;
+    return total > 0 ? clamp(-r.top / total) : (r.top < window.innerHeight*0.5 ? 1 : 0);
+  }
+
+  // hero typewriter + checks
+  var jobs = ["Technical SEO audit for a WordPress site","Link building for a new online store","Keyword map + 10 content briefs","Fix crawl errors and slow pages"];
+  var textEl = document.getElementById('vetText'), checks = document.querySelectorAll('#checks li'), stamp = document.getElementById('stamp');
+  if(reduce){ textEl.textContent = jobs[0]; checks.forEach(function(c){c.classList.add('on')}); stamp.classList.add('on'); }
+  else {
+    var ji = 0;
+    function runJob(){
+      var t = jobs[ji % jobs.length], i = 0;
+      textEl.textContent=''; checks.forEach(function(c){c.classList.remove('on')}); stamp.classList.remove('on');
+      var typer = setInterval(function(){
+        textEl.textContent = t.slice(0, ++i);
+        if(i >= t.length){
+          clearInterval(typer);
+          checks.forEach(function(c,k){ setTimeout(function(){c.classList.add('on')}, 450 + k*450); });
+          setTimeout(function(){stamp.classList.add('on')}, 450 + checks.length*450 + 200);
+          setTimeout(function(){ ji++; runJob(); }, 450 + checks.length*450 + 2600);
+        }
+      }, 42);
+    }
+    runJob();
+  }
+
+  // pinned how-it-works
+  var how = document.getElementById('how'), steps = document.querySelectorAll('#steps .step'),
+      howBar = document.getElementById('howBar'), howCount = document.getElementById('howCount');
+  // bonus scene
+  var bonusScene = document.getElementById('bonusScene'), eq = document.getElementById('equation');
+  // pct counter
+  var pct = document.getElementById('pct'), pctBox = pct.closest('.rv');
+
+  function onScroll(){
+    var h = document.documentElement, p = h.scrollTop / (h.scrollHeight - h.clientHeight);
+    bar.style.width = (p*100) + '%';
+    nav.classList.toggle('scrolled', h.scrollTop > 10);
+
+    if(window.innerWidth > 900 && !reduce){
+      var sp = sceneProgress(how);
+      var idx = Math.min(steps.length-1, Math.floor(sp * steps.length * 0.999 + 0.0001));
+      steps.forEach(function(s,k){ s.classList.toggle('on', k <= idx); s.classList.toggle('current', k === idx); });
+      howBar.style.width = ((idx+1)/steps.length*100) + '%';
+      howCount.textContent = 'Step ' + (idx+1) + ' of ' + steps.length;
+
+      var bp = sceneProgress(bonusScene);
+      eq.classList.toggle('reveal', bp > 0.3);
+    } else {
+      steps.forEach(function(s){ s.classList.add('on'); });
+      var r = eq.getBoundingClientRect();
+      if(r.top < window.innerHeight*0.75) eq.classList.add('reveal');
+    }
+
+    if(!reduce){
+      var pr = pctBox.getBoundingClientRect();
+      var v = clamp((window.innerHeight - pr.top) / (window.innerHeight*0.6));
+      pct.textContent = Math.round(v*20);
+    }
+  }
+  if(reduce){ pct.textContent = '20'; eq.classList.add('reveal'); }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+
+  // reveal on scroll
+  var els = document.querySelectorAll('.rv, .term');
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var el = e.target;
+          if(el.classList.contains('term')){
+            var i = Array.prototype.indexOf.call(el.parentNode.children, el);
+            el.style.transitionDelay = (i*90) + 'ms';
+          }
+          el.classList.add('in'); io.unobserve(el);
+        }
+      });
+    }, {threshold:0.15, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+})();
+</script>
+</body>
+</html>
